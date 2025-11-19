@@ -130,6 +130,7 @@
                             <th>Bed</th>
                             <th>Bath</th>
                             <th>Photos</th>
+                            <th>Desc</th>
                             <th>Status</th>
                             <th>Actions</th>
                         </tr>
@@ -198,7 +199,7 @@
             $('#statusFilter').on('change', function() {
                 var val = $(this).val();
 
-                // Apply filter only on the status column (index 8)
+                // Apply filter only on the status column (index 9)
                 if (val === "") {
                     table.column(9).search("").draw();
                 } else {
